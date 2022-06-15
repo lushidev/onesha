@@ -19,6 +19,15 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="{{asset('assets/tinymce/tinymce.min.js')}}"></script>
+<script>
+    tinymce.init({
+  selector: 'textarea',  // change this value according to your HTML
+  plugins: 'a_tinymce_plugin',
+  a_plugin_option: true,
+  a_configuration_option: 400
+});
+</script>
 </head>
 <body>
     <div id="app">

@@ -27,4 +27,4 @@ Route::post('/categories', [App\Http\Controllers\CategorieController::class, 'st
 Route::middleware(['auth'])->group(function(){
         Route::get('/articles', [App\Http\Controllers\ArticleController::class, 'create'])->name('create-article');
         Route::post('/articles', [App\Http\Controllers\ArticleController::class, 'store'])->name('store-article');
-    }
+    });
