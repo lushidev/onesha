@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Article;
 
 class ArticleController extends Controller
 {
@@ -23,7 +24,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.articles');
     }
 
     /**
@@ -34,7 +35,12 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Article::create([
+                'user_id'=>$userId,
+                'categorie_id'=>$request->categorie_id,
+                'title'=>$request->title,
+                'description'=>$request->$description
+            ]);
     }
 
     /**
