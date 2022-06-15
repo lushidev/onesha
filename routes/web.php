@@ -24,5 +24,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/categories', [App\Http\Controllers\CategorieController::class, 'create'])->name('create-categorie');
 Route::post('/categories', [App\Http\Controllers\CategorieController::class, 'store'])->name('store-categorie');
 
-Route::get('/articles', [App\Http\Controllers\CategorieController::class, 'create'])->name('create-article');
-Route::post('/articles', [App\Http\Controllers\CategorieController::class, 'store'])->name('store-article');
+Route::get('/articles', [App\Http\Controllers\ArticleController::class, 'create'])->name('create-article');
+Route::post('/articles', [App\Http\Controllers\ArticleController::class, 'store'])->name('store-article');
