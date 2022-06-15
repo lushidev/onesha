@@ -20,3 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/categories', [App\Http\Controllers\CategorieController::class, 'index'])->name('all');
+Route::get('/categories', [App\Http\Controllers\CategorieController::class, 'create'])->name('create-categorie');
+Route::post('/categories', [App\Http\Controllers\CategorieController::class, 'store'])->name('store-categorie');
+
+Route::get('/articles', [App\Http\Controllers\CategorieController::class, 'create'])->name('create-article');
+Route::post('/articles', [App\Http\Controllers\CategorieController::class, 'store'])->name('store-article');
