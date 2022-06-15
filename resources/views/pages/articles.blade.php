@@ -7,19 +7,20 @@
 	  	@csrf 
 	  		
 	  			<div class="form-group">
-	  				<label for="disabledTextInput">enter the categorie name</label>
+	  				<label for="">enter the categorie name</label>
 	  				<input type="text" class="form-control" name="title" placeholder="categorie name">
 	  			</div>
 	  			<div class="form-group">
-	  				<label for="disabledTextInput">enter the categorie name</label>
+	  				<label for="">enter the categorie name</label>
 	  				<select name="categorie_id">
 	  				@foreach($categories as $categorie)
 	  				  <option value="{{$categorie->id}}">{{$categorie->name}}</option>
+	  				 @endforeach
 	  				</select>
 	  			</div>
 
 	  			<div class="form-group col-md-auto">
-	  				<textarea id="myTextarea" name="desciption"></textarea>
+	  				<textarea id="myTextarea" name="description"></textarea>
 	  			</div>
 	  			
 	  			
