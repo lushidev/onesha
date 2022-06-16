@@ -69,7 +69,7 @@
                         
                         <!-- button --> 
                         <a href="#" class="dtr-btn dtr-btn-styled btn-red dtr-mt-10">Request a Demo</a> <a class="dtr-btn btn-blue dtr-icon-btn dtr-video-popup dtr-mt-10" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=kuceVNBTJio"><i class="icon-play1"></i></a>
-                        <p class="text-size-xs dtr-mt-10">No credit card required. Cancel anytime.</p>
+                        <p class="text-size-xs dtr-mt-10">créer votre compte et profiter de nos services</p>
                     </div>
                     <!-- column 1 ends --> 
                     
@@ -145,7 +145,7 @@
                 <!-- heading starts -->
                 <div class="dtr-styled-heading text-center">
                     <h2>Why everyone loves<br>
-                        Ainotion</h2>
+                        Onesha</h2>
                 </div>
                 <!-- heading ends --> 
                 
@@ -154,19 +154,20 @@
                     
                     <!-- column 1 starts -->
                     <div class="col-12 col-md-4 dtr-img-feature">
-                        <h3><span class="color-blue">1.</span> Radical </h3>
-                        <p class="font-style-italic">Nam libero tempore soluta nobis.</p>
+                        <h3><span class="color-blue">1.</span> Restaurants </h3>
+                        <p class="font-style-italic">Faites connaitre votre restau.</p>
                         <img src="assets/images/icon-large1.png" alt="image">
-                        <p>Lorem ipsum dolor sit amet nam consectetur adipiscing elit eiusmo tempor incididunt. </p>
+                        <p>Avec Onesha vous avez la possibilité de faire connaitre vos plats au monde entier. </p>
                     </div>
                     <!-- column 1 ends --> 
                     
                     <!-- column 2 starts -->
                     <div class="col-12 col-md-4 dtr-img-feature">
-                        <h3><span class="color-blue">2.</span> Automated </h3>
-                        <p class="font-style-italic">Nam libero tempore soluta nobis.</p>
+                        <h3><span class="color-blue">2.</span> Habillement  </h3>
+                        <p class="font-style-italic">votre boutique, aux yeux du monde</p>
                         <img src="assets/images/icon-large2.png" alt="image">
-                        <p>Lorem ipsum dolor sit amet nam consectetur adipiscing elit eiusmo tempor incididunt. </p>
+                        <p>Vous avez une boutique, etaler vos produits de qualité sur onesha et 
+                        recevez de la clientèle plus que vous ne l'aurez imaginé. </p>
                     </div>
                     <!-- column 2 ends --> 
                     
