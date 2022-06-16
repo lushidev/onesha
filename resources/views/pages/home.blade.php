@@ -12,10 +12,10 @@
                 <div class="dtr-header-left"> 
                     
                     <!-- logo --> 
-                    <a class="logo-default dtr-scroll-link" href="#home"><img src="assets/images/logo-dark.png" alt="logo" width="173"></a> 
+                    <a class="logo-default dtr-scroll-link" href="#home">{{ config('app.name', 'Laravel') }}</a> 
                     
                     <!-- logo on scroll --> 
-                    <a class="logo-alt dtr-scroll-link" href="#home"><img src="assets/images/logo-dark.png" alt="logo" width="173"></a> 
+                    <a class="logo-alt dtr-scroll-link" href="#home">{{ config('app.name', 'Laravel') }}</a> 
                     <!-- logo on scroll ends --> 
                     
                 </div>
@@ -61,11 +61,11 @@
                     <div class="col-12 col-md-6"> 
                         
                         <!-- Heading -->
-                        <h1>AI support for you<br>
-                            <span class="color-blue">On-Demand</span></h1>
+                        <h1>Promouvoir votre business<br>
+                            <span class="color-blue">One-Look</span></h1>
                         
                         <!-- Text -->
-                        <p> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt soluta nobis assumenda labore quod maxime dolore magna aliqua. </p>
+                        <p> Nous vous aidons à Promouvoir votre business grace à la plate - forme <span class="color-blue">Onesha</span> . </p>
                         
                         <!-- button --> 
                         <a href="#" class="dtr-btn dtr-btn-styled btn-red dtr-mt-10">Request a Demo</a> <a class="dtr-btn btn-blue dtr-icon-btn dtr-video-popup dtr-mt-10" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=kuceVNBTJio"><i class="icon-play1"></i></a>

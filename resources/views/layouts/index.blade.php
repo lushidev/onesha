@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
-<title>Ainotion HTML Landing Template</title>
+<title>{{ config('app.name', 'Laravel') }}</title>
 <meta name="author" content="tansh">
 <meta name="description" content="HTML Teamplate">
 <meta name="keywords" content="start up, business, one page">
@@ -40,7 +40,7 @@
         <div class="container"> 
             
             <!-- small devices logo --> 
-            <a href="index.html"><img src="assets/images/logo-dark.png" alt="logo"></a> 
+            <a href="index.html"><h1>{{ config('app.name', 'Laravel') }}</h1></a> 
             <!-- small devices logo ends --> 
             
             <!-- menu button -->
