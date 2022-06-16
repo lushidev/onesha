@@ -165,7 +165,7 @@
                     <!-- column 3 starts -->
                     <div class="col-12 col-md-4 dtr-img-feature">
                         <h3><span class="color-blue">3.</span> Artisan </h3>
-                        <p class="font-style-italic">Faites connaitre votre chef d'oeuvre.</p>
+                        <p class="font-style-italic">Faites connaitre votre chef doeuvre.</p>
                         <img src="assets/images/icon-large3.png" alt="image">
                         <p>Vous fabriquez des chaises, tables, produits artisanaux, Onesha vous offre la capacité d'exposé vos produits et de beneficier d'une 
                         clientèle importante</p>
@@ -188,10 +188,10 @@
                 <!--== row starts ==-->
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6">
-                        <p>Grow revenue with lower costs</p>
-                        <h4>AI powered system, that automates support for your customers and employees.</h4>
+                        <p>Elargissez vos sources de revenus</p>
+                        <h4>Grace à Onesha, Elargissez vos sources de revenus, tout en canalisant vos affaires.</h4>
                     </div>
-                    <div class="col-12 col-md-6 text-md-right"> <a href="#" class="dtr-btn dtr-btn-styled btn-red">Request a Demo</a> <a href="#" class="dtr-btn-flat btn-flat-blue dtr-ml-5">Learn More</a> </div>
+                    <div class="col-12 col-md-6 text-md-right"> <a href="#" class="dtr-btn dtr-btn-styled btn-red">créer une entreprise</a> <a href="#" class="dtr-btn-flat btn-flat-blue dtr-ml-5">En savoir plus</a> </div>
                 </div>
                 <!--== row ends ==--> 
                 
@@ -205,29 +205,7 @@
         <section id="about" class="dtr-section">
             <div class="container"> 
                 
-                <!--== row 1 starts ==-->
-                <div class="row dtr-pt-100"> 
-                    
-                    <!-- column 1 starts -->
-                    <div class="col-12 col-md-6 small-device-space"> <img src="assets/images/ai-img1.png" alt="image"> </div>
-                    <!-- column 1 ends --> 
-                    
-                    <!-- column 2 starts -->
-                    <div class="col-12 col-md-6">
-                        <div class="dtr-pl-30">
-                            <h2>Analyze data with built-in digital tools.</h2>
-                            <p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda omnis dolor repellendus. Temporibus autem quibusdam debitis aut rerum necessitatibus saepe eveniet voluptates sint.</p>
-                            <ul class="dtr-icon-list dtr-my-20">
-                                <li><i class="icon-check-circle2 color-blue"></i>Lorem ipsum dolor sit amet</li>
-                                <li><i class="icon-check-circle2 color-blue"></i>Vero facil accusamus dores iusto odio</li>
-                                <li><i class="icon-check-circle2 color-blue"></i>Optio cumque nihil</li>
-                            </ul>
-                            <a href="#testimonial" class="dtr-btn-small btn-light-blue dtr-scroll-link"><span>Reviews</span> View all feedbacks</a> </div>
-                    </div>
-                    <!-- column 2 ends --> 
-                    
-                </div>
-                <!--== row 1 ends ==--> 
+               
                 
                 <!--== row 2 starts ==-->
                 <div class="row dtr-mt-100"> 
