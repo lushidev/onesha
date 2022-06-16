@@ -213,7 +213,7 @@
                     <!-- column 1 starts -->
                     <div class="col-12 col-md-6">
                         <div class="dtr-pr-30">
-                            <h2>Improve customer satisfaction at all hours.</h2>
+                            <h2>Les clients sont partout</h2>
                             <p class="dtr-mb-30">Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda omnis dolor repellendus. Temporibus autem quibusdam debitis aut rerum necessitatibus saepe eveniet voluptates sint.</p>
                             <span class="dtr-tag">Lorem Ipsum</span> <span class="dtr-tag">Dolor Sit amet</span> <span class="dtr-tag">Lorem Ipsum</span> <span class="dtr-tag">Dolor Sit</span> <span class="dtr-tag">Lorem Ipsum</span> <span class="dtr-tag">Dolor Sit amet</span> <span class="dtr-tag">Lorem Ipsum amet</span> <span class="dtr-tag">Dolor Sit</span> <span class="dtr-tag">Lorem amet Ipsum</span> <span class="dtr-tag">Dolor amet Sit amet</span> </div>
                     </div>
