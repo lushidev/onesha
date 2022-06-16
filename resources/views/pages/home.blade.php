@@ -214,8 +214,10 @@
                     <div class="col-12 col-md-6">
                         <div class="dtr-pr-30">
                             <h2>Les clients sont partout</h2>
-                            <p class="dtr-mb-30">Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda omnis dolor repellendus. Temporibus autem quibusdam debitis aut rerum necessitatibus saepe eveniet voluptates sint.</p>
-                            <span class="dtr-tag">Lorem Ipsum</span> <span class="dtr-tag">Dolor Sit amet</span> <span class="dtr-tag">Lorem Ipsum</span> <span class="dtr-tag">Dolor Sit</span> <span class="dtr-tag">Lorem Ipsum</span> <span class="dtr-tag">Dolor Sit amet</span> <span class="dtr-tag">Lorem Ipsum amet</span> <span class="dtr-tag">Dolor Sit</span> <span class="dtr-tag">Lorem amet Ipsum</span> <span class="dtr-tag">Dolor amet Sit amet</span> </div>
+                            <p class="dtr-mb-30">Quelle chance d'etre né dans cette période du boom electronique?
+                            Aujourd'hui vos clients se trouvent partout, et pour cela avoir un compte sur Onesha, vous garantit de
+                            trouver n importe quel client, ce qui augmente sans aucun doute une demande des vos produits considérables.</p>
+                            <span class="dtr-tag">Restaurants</span> <span class="dtr-tag">Terrasse</span> <span class="dtr-tag">Boutique</span> <span class="dtr-tag">Dolor Sit</span> <span class="dtr-tag">Magasin</span> <span class="dtr-tag">produits</span> <span class="dtr-tag">Habillement</span> <span class="dtr-tag">Dollar</span> <span class="dtr-tag"> Artisan</span> <span class="dtr-tag">chef d'oeuvre</span> </div>
                     </div>
                     <!-- column 1 ends --> 
                     
