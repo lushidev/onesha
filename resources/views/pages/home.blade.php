@@ -110,21 +110,12 @@
                         <!--=== img slider - 3col starts ===-->
                         <div class="dtr-slick-slider dtr-img-slider-6col"> 
                             <!-- img 1 -->
-                            <div> <img src="assets/images/client-2.png" alt="image"> </div>
+                            <div>Artisanal</div>
                             <!-- img 2 -->
-                            <div> <img src="assets/images/client-1.png" alt="image"> </div>
+                            <div> Restaurants </div>
                             <!-- img 3 -->
-                            <div> <img src="assets/images/client-3.png" alt="image"> </div>
+                            <div> Habillement</div>
                             <!-- img 4 -->
-                            <div> <img src="assets/images/client-4.png" alt="image"> </div>
-                            <!-- img 5 -->
-                            <div> <img src="assets/images/client-5.png" alt="image"> </div>
-                            <!-- img 6 -->
-                            <div> <img src="assets/images/client-6.png" alt="image"> </div>
-                            <!-- img 7 -->
-                            <div> <img src="assets/images/client-2.png" alt="image"> </div>
-                            <!-- img 8 -->
-                            <div> <img src="assets/images/client-4.png" alt="image"> </div>
                         </div>
                         <!--=== img slider - 3col ends ===--> 
                         
@@ -167,16 +158,17 @@
                         <p class="font-style-italic">votre boutique, aux yeux du monde</p>
                         <img src="assets/images/icon-large2.png" alt="image">
                         <p>Vous avez une boutique, etaler vos produits de qualité sur onesha et 
-                        recevez de la clientèle plus que vous ne l'aurez imaginé. </p>
+                        recevez de la clientèle plus que vous ne l aurez imaginé. </p>
                     </div>
                     <!-- column 2 ends --> 
                     
                     <!-- column 3 starts -->
                     <div class="col-12 col-md-4 dtr-img-feature">
-                        <h3><span class="color-blue">3.</span> Instant </h3>
-                        <p class="font-style-italic">Nam libero tempore soluta nobis.</p>
+                        <h3><span class="color-blue">3.</span> Artisan </h3>
+                        <p class="font-style-italic">Faites connaitre votre chef d'oeuvre.</p>
                         <img src="assets/images/icon-large3.png" alt="image">
-                        <p>Lorem ipsum dolor sit amet nam consectetur adipiscing elit eiusmo tempor incididunt. </p>
+                        <p>Vous fabriquez des chaises, tables, produits artisanaux, Onesha vous offre la capacité d'exposé vos produits et de beneficier d'une 
+                        clientèle importante</p>
                     </div>
                     <!-- column 3 ends --> 
                     
