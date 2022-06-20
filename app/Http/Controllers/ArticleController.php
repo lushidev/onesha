@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Article;
 use App\Models\Category;
 use Auth;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller
 {
@@ -39,18 +41,18 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         
-        $fileName=$request->file('file')->getClientOriginalName();
+        /*$fileName=$request->file('file')->getClientOriginalName();
         $path=$request->file('file')->storeAs('uploads', $fileName, 'public');
         
-        
+        */
         /*$imgpath = request()->file('file')->store('uploads', 'public');*/
-        $userId = Auth::user()->id;
+        /*$userId = Auth::user()->id;
         Article::create([
                 'user_id'=>$userId,
                 'categorie_id'=>$request->categorie_id,
                 'title'=>$request->title,
                 'description'=>$request->description
-            ]);
+            ]);*/
     }
 
     /**
