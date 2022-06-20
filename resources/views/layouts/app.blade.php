@@ -25,6 +25,7 @@
   selector: 'textarea',  // change this value according to your HTML
   plugins:'image',
   toolbar: 'image',
+  images_upload_url: 'postAcceptor.php',
   automatic_uploads: true,
   images_upload_url: '/upload',
   file_picker_types: 'image',
