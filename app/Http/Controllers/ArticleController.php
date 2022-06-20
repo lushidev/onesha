@@ -38,6 +38,12 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
+        
+        $fileName=$request->file('file')->getClientOriginalName();
+        $path=$request->file('file')->storeAs('uploads', $fileName, 'public');
+        
+        
+        /*$imgpath = request()->file('file')->store('uploads', 'public');*/
         $userId = Auth::user()->id;
         Article::create([
                 'user_id'=>$userId,
