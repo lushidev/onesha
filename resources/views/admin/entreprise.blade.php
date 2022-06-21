@@ -16,10 +16,7 @@
                 <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
                 <div class="validate"></div>
               </div>
-              <div class="form-group">
-                <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                <div class="validate"></div>
-              </div>
+              
              
 
               <div class="loading"></div>
