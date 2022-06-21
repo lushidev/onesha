@@ -24,7 +24,7 @@ class CategorieController extends Controller
      */
     public function create()
     {
-        return view('pages.categories');
+        return view('admin.entreprise');
     }
 
     /**
