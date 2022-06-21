@@ -25,8 +25,7 @@
                 <div class="dtr-header-right ml-auto">
                     <div class="main-navigation dtr-menu-dark">
                         <ul class="sf-menu dtr-scrollspy dtr-nav dark-nav-on-load dark-nav-on-scroll">
-                            <li> <a class="nav-link" href="#home">Home</a> </li>
-                            <li> <a class="nav-link" href="#features">Why AI!</a> </li>
+                            <li> <a class="nav-link" href="#home">Acceuil</a> </li>
                             <li> <a class="nav-link" href="#about">About</a> </li>
                             <li> <a class="nav-link" href="#features2">Features</a> </li>
                             <li> <a class="nav-link" href="#pricing">Pricing</a> </li>
@@ -37,7 +36,7 @@
                 <!-- menu ends --> 
                 
                 <!-- header button starts --> 
-                <a href="#contact" class="dtr-btn dtr-btn-styled btn-red dtr-scroll-link dtr-ml-30">Request a Demo</a> 
+                <a href="#contact" class="dtr-btn dtr-btn-styled btn-red dtr-scroll-link dtr-ml-30">créer votre entreprise</a> 
                 <!-- header button ends --> 
                 
             </div>
@@ -68,7 +67,7 @@
                         <p> Nous vous aidons à Promouvoir votre business grace à la plate - forme <span class="color-blue">Onesha</span> . </p>
                         
                         <!-- button --> 
-                        <a href="#" class="dtr-btn dtr-btn-styled btn-red dtr-mt-10">Request a Demo</a> <a class="dtr-btn btn-blue dtr-icon-btn dtr-video-popup dtr-mt-10" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=kuceVNBTJio"><i class="icon-play1"></i></a>
+                        <a href="#" class="dtr-btn dtr-btn-styled btn-green dtr-mt-10">créer votre entreprise</a> <a class="dtr-btn btn-blue dtr-icon-btn dtr-video-popup dtr-mt-10" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=kuceVNBTJio"><i class="icon-play1"></i></a>
                         <p class="text-size-xs dtr-mt-10">créer votre compte et profiter de nos services</p>
                     </div>
                     <!-- column 1 ends --> 
