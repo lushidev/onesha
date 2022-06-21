@@ -33,6 +33,11 @@
 </head>
 
 <body>
+<section id="container">
+
+</section>
+
+
 
 
   <script src="lib/jquery/jquery.min.js"></script>
