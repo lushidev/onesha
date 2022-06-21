@@ -26,9 +26,7 @@
                     <div class="main-navigation dtr-menu-dark">
                         <ul class="sf-menu dtr-scrollspy dtr-nav dark-nav-on-load dark-nav-on-scroll">
                             <li> <a class="nav-link" href="#home">Acceuil</a> </li>
-                            <li> <a class="nav-link" href="#about">About</a> </li>
-                            <li> <a class="nav-link" href="#features2">Features</a> </li>
-                            <li> <a class="nav-link" href="#pricing">Pricing</a> </li>
+                            <li> <a class="nav-link" href="#about">A propos</a> </li>
                             <li> <a class="nav-link" href="#contact">Contact</a> </li>
                         </ul>
                     </div>
