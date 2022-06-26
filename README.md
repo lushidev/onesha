@@ -1,3 +1,3 @@
 ## Onesha
 
-<p> Onesha est une plateforme qui met en avance les differents produteurs artisanaux, afin de s'offrir de la bonne clientèle</p>
+<p> <strong>Onesha </strong> est une e-commerce, plate-forme permettant à différents seller d'étaler leurs produits</p>
