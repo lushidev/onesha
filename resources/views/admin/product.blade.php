@@ -4,7 +4,6 @@
     <section id="main-content">
       <section class="wrapper ">
         <h3><i class="fa fa-angle-right"></i> Product form</h3>
-        <!-- BASIC FORM ELELEMNTS -->
         <div class="row mt">
           <div class="col-lg-6 col-md-6 col-sm-6">
             <h4 class="title">add product</h4>
@@ -23,22 +22,21 @@
                   <Textarea type="text" name="description" placeholder="add an description" class="form-control"></Textarea>   
               </div>
                <div class="form-group">
-                  <input type="file" name="files[]" multiple class="btn btn-success fileinput-button"> 
+                  <input type="file" name="path" multiple class="btn btn-success fileinput-button"> 
+              </div>
+               <div class="form-group">
+              <select>
+                <option value="">option 1</option>
+              </select>    
               </div>
              
               <div class="form-send">
-                <button type="submit" class="btn btn-large btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-large btn-primary">add product</button>
               </div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </form>
-          </div>
-
-         
+          </div>       
         </div>
-        <!-- /row -->
-
-
-        <!-- /row -->
       </section>
       <!-- /wrapper -->
     </section>
