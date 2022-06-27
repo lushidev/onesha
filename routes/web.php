@@ -21,10 +21,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //Route::get('/categories', [App\Http\Controllers\CategorieController::class, 'index'])->name('all');
-Route::get('/categories', [App\Http\Controllers\CategorieController::class, 'create'])->name('create-categorie');
-Route::post('/categories', [App\Http\Controllers\CategorieController::class, 'store'])->name('store-categorie');
 
 Route::middleware(['auth'])->group(function(){
+        Route::get('/categories', [App\Http\Controllers\CategorieController::class, 'create'])->name('create-categorie');
+        Route::post('/categories', [App\Http\Controllers\CategorieController::class, 'store'])->name('store-categorie');
         Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
         Route::post('/articles', [App\Http\Controllers\ArticleController::class, 'store'])->name('store-article');
     });

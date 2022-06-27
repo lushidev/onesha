@@ -24,7 +24,8 @@ class CategorieRequest extends FormRequest
     public function rules()
     {
         return [
-            'name':'required|string|unique'
+            'user_id'=>'required|integer',
+            'name'=>'required|string|unique:categories'
         ];
     }
 }

@@ -15,7 +15,7 @@ class CategorieController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::all();
     }
 
     /**
@@ -34,9 +34,12 @@ class CategorieController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, CategorieRequest $categorieRequest)
+    public function store(Request $request)
     {
-        //
+        $categorie = Category::create([
+            'user_id'=>$request->user_id,
+            'name'=>$request->name
+            ]);
     }
 
     /**
