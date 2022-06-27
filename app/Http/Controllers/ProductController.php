@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use Illuminate\Http\UploadedFile;
 use App\Models\Image;
+use App\Http\Repositories\ProductRepositorie;
 
 class ProductController extends Controller
 {
@@ -38,9 +40,10 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        dd(($request));
-        $fileName = $request->file('image')->getClientOriginalName();
-        $path = $request->file('image')->storeAs('uploads',$fileName,'public');
+        dd($request);
+       $path = $request->file('image')->storeAs('uploads',$request->image,'public_uploads');
+
+        
         Product::create([
             'categorie_id'=>$request->categorie_id,
             'name'=>$request->name,
