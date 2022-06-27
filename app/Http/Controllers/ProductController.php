@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use App\Models\Category;
+use App\Models\Image;
 
 class ProductController extends Controller
 {
@@ -24,7 +26,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.product');
+        $categories = Category::all();
+        return view('admin.product',['categories'=>$categories]);
     }
 
     /**
@@ -35,7 +38,15 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd(($request));
+        $fileName = $request->file('image')->getClientOriginalName();
+        $path = $request->file('image')->storeAs('uploads',$fileName,'public');
+        Product::create([
+            'categorie_id'=>$request->categorie_id,
+            'name'=>$request->name,
+            'description'=>$request->description,
+            'price'=>$request->price,
+            ]);
     }
 
     /**

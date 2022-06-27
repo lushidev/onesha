@@ -8,12 +8,11 @@
           <div class="col-lg-6 col-md-6 col-sm-6">
             <h4 class="title">add product</h4>
             <div id="message"></div>
-            <form   action="" method="POST">
+            <form action="{{route('store-product')}}" method="POST">
              @csrf
               <div class="form-group">
-                <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your product name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
+                <input type="text" name="name" class="form-control" id="contact-name" placeholder="Your product name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
                 <div class="validate"></div>
-                <input type="hidden" value="{{Auth::user()->id}}" name="user_id" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
                 
               </div>      
               <div class="loading"></div>
@@ -22,11 +21,20 @@
                   <Textarea type="text" name="description" placeholder="add an description" class="form-control"></Textarea>   
               </div>
                <div class="form-group">
-                  <input type="file" name="path" multiple class="btn btn-success fileinput-button"> 
+                  <input type="file" name="image" class="btn btn-success fileinput-button"> 
               </div>
+
+              <div class="form-group">
+                <input type="text" name="price" class="form-control" id="contact-name" placeholder="Your product name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
+                <div class="validate"></div>
+                
+              </div>     
+
                <div class="form-group">
-              <select>
-                <option value="">option 1</option>
+              <select name="categorie_id">
+              @foreach($categories as $categorie)
+                <option value="{{$categorie->id}}">{{$categorie->name}}</option>
+              @endforeach
               </select>    
               </div>
              

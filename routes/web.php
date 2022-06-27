@@ -27,4 +27,5 @@ Route::middleware(['auth'])->group(function(){
         Route::post('/categories', [App\Http\Controllers\CategorieController::class, 'store'])->name('store-categorie');
         Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
         Route::get('/products', [App\Http\Controllers\ProductController::class, 'create'])->name('create-product');
+        Route::post('/products', [App\Http\Controllers\ProductController::class, 'store'])->name('store-product');
     });
