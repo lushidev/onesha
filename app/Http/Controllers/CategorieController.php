@@ -40,6 +40,7 @@ class CategorieController extends Controller
             'user_id'=>$request->user_id,
             'name'=>$request->name
             ]);
+        return redirect(route('/'));
     }
 
     /**
