@@ -21,7 +21,7 @@
                   <Textarea type="text" name="description" placeholder="add an description" class="form-control"></Textarea>   
               </div>
                <div class="form-group">
-                  <input type="file" name="image" class="btn btn-success fileinput-button"> 
+                  <input type="file" name="image" > 
               </div>
 
               <div class="form-group">
