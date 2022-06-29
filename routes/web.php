@@ -28,4 +28,5 @@ Route::middleware(['auth'])->group(function(){
         Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
         Route::get('/products', [App\Http\Controllers\ProductController::class, 'create'])->name('create-product');
         Route::post('/products', [App\Http\Controllers\ProductController::class, 'store'])->name('store-product');
+        Route::get('/Entreprise', [App\Http\Controllers\EntrepriseController::class, 'create'])->name('create-entreprise');
     });
