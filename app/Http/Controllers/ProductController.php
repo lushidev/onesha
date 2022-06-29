@@ -48,6 +48,7 @@ class ProductController extends Controller
             'name'=>$request->name,
             'description'=>$request->description,
             'price'=>$request->price,
+            'path'=>$newFile
             ]);
     }
 
