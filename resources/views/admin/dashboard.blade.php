@@ -270,6 +270,7 @@
               <span>add  </span>
               </a>
             <ul class="sub">
+              <li><a href="{{route('create-entreprise')}}">create entreprise</a></li>
               <li><a href="{{route('create-product')}}">add a product</a></li>
               <li><a href="{{route('create-categorie')}}">Add a categorie</a></li>             
             </ul>

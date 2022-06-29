@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Entreprise;
 
 class EntrepriseController extends Controller
 {
@@ -23,7 +24,7 @@ class EntrepriseController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.entreprise');
     }
 
     /**
@@ -34,7 +35,11 @@ class EntrepriseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Entreprise::create([
+            'user_id'=>$request->user_id,
+            'name'=>$request->name,
+            'url_name'=>$request->url_name
+            ]);
     }
 
     /**

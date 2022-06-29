@@ -3,7 +3,7 @@
 @section('content')
     <section id="main-content">
       <section class="wrapper ">
-        <h3><i class="fa fa-angle-right"></i> Contact Form</h3>
+        <h3><i class="fa fa-angle-right"></i> categorie Form</h3>
         <!-- BASIC FORM ELELEMNTS -->
         <div class="row mt">
           <div class="col-lg-6 col-md-6 col-sm-6">
