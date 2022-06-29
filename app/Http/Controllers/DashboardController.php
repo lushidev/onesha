@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Entreprise;
+use App\Http\Repositories\EntrepriseRepositorie;
+
+
 class DashboardController extends Controller
 {
     /**
@@ -13,8 +16,9 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        
-        return view('admin.dashboard');
+         $entreprise = new EntrepriseRepositorie();
+         $name = $entreprise->entreprise_name();
+        return view('admin.dashboard',['name'=>$name]);
     }
 
     /**

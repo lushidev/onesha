@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Requests\CategorieRequest;
+use App\Http\Repositories\EntrepriseRepositorie;
 
 class CategorieController extends Controller
 {
@@ -25,7 +26,9 @@ class CategorieController extends Controller
      */
     public function create()
     {
-        return view('admin.categorie');
+        $entreprise = new EntrepriseRepositorie();
+        $all_entreprises = $entreprise->all_entreprise();
+        return view('admin.categorie',['entreprises'=>$all_entreprises]);
     }
 
     /**
@@ -38,7 +41,8 @@ class CategorieController extends Controller
     {
         $categorie = Category::create([
             'user_id'=>$request->user_id,
-            'name'=>$request->name
+            'name'=>$request->name,
+            'entreprise_id'=>$request->entreprise_id
             ]);
         return redirect(route('/'));
     }

@@ -11,7 +11,7 @@ class Category extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id','name'];
+    protected $fillable = ['user_id','name','entreprise_id'];
 
     public function products(){
         return $this->hasMany(Product::class);

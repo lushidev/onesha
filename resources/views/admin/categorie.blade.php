@@ -14,9 +14,15 @@
               <div class="form-group">
                 <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
                 <div class="validate"></div>
-                <input type="hidden" value="{{Auth::user()->id}}" name="user_id" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
-                
-              </div>      
+                <input type="hidden" value="{{Auth::user()->id}}" name="user_id" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >  
+              </div>  
+              <div class="form-group">
+                <select name="entreprise_id">
+                @foreach($entreprises as $entreprise)
+                  <option value="{{$entreprise->id}}">{{$entreprise->name}}</option>
+                @endforeach
+                </select>
+              </div>    
               <div class="loading"></div>
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
