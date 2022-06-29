@@ -8,7 +8,7 @@
           <div class="col-lg-6 col-md-6 col-sm-6">
             <h4 class="title">add product</h4>
             <div id="message"></div>
-            <form action="{{route('store-product')}}" method="POST">
+            <form action="{{route('store-product')}}" method="POST" enctype="multipart/form-data">
              @csrf
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="contact-name" placeholder="Your product name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >

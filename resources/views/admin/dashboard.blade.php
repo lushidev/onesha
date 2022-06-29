@@ -43,7 +43,7 @@
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
-      <a href="index.html" class="logo"><b>DASH<span>IO</span></b></a>
+      <a href="index.html" class="logo"><b>{{Auth::user()->name}}<span>IO</span></b></a>
       <!--logo end-->
       <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
@@ -270,7 +270,7 @@
               <span>add  </span>
               </a>
             <ul class="sub">
-              <li><a href="form_component.html">add a product</a></li>
+              <li><a href="{{route('create-product')}}">add a product</a></li>
               <li><a href="{{route('create-categorie')}}">Add a categorie</a></li>             
             </ul>
           </li>
