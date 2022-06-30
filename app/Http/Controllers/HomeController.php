@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Repositories\EntrepriseRepositorie;
+use App\Models\Entreprise;
+use App\Models\Category;
 
 class HomeController extends Controller
 {
@@ -31,6 +33,7 @@ class HomeController extends Controller
         $entreprise = new EntrepriseRepositorie();
         $url_name = $entreprise->entreprise_url($url);
         if($url_name){
+            
             return view('shop.index');
         }else{
             return redirect(route('index'));
