@@ -30,10 +30,10 @@ class HomeController extends Controller
     }
 
     public function entreprise(string $url){
-        $entreprise = new EntrepriseRepositorie();
-        $url_name = $entreprise->entreprise_url($url);
+        /*$entreprise = new EntrepriseRepositorie();
+        $url_name = $entreprise->entreprise_url($url);*/
         if($url_name){
-            
+            $entreprise = Entreprise::whereUrl_name($url)
             return view('shop.index');
         }else{
             return redirect(route('index'));
