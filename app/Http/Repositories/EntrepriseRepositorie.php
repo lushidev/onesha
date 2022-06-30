@@ -25,7 +25,7 @@ class EntrepriseRepositorie {
 		$entreprise = Entreprise::whereUrl_name($name)->get();
 
 		foreach($entreprise as $entreprises){
-			$entreprise_name = $entreprises->name;
+			$entreprise_name = $entreprises->url_name;
 			return $entreprise_name;
 		}
 

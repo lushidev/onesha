@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Repositories\EntrepriseRepositorie;
 
 class HomeController extends Controller
 {
@@ -26,9 +27,16 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function entreprise(string $entreprise){
+    public function entreprise(string $url){
+        $entreprise = new EntrepriseRepositorie();
+        $url_name = $entreprise->entreprise_url($url);
+        if($url_name){
+            return view('shop.index');
+        }else{
+            return redirect(route('index'));
+        }
+
         
-        return view('shop.index');
 
     }
 }
