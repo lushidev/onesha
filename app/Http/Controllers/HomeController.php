@@ -38,6 +38,7 @@ class HomeController extends Controller
             $entreprises = Entreprise::where('url_name',$url)->get();
             $categories = Category::where('entreprise_id',$entreprise_id)->get();
             
+            
             return view('shop.index',['entreprises'=>$entreprises, 'categories'=>$categories]);
         }else{
             return redirect(route('index'));

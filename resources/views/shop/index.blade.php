@@ -1414,7 +1414,7 @@
 
             <div class="product-grid">
 
-         
+         @foreach($categories as $product)
 
               <div class="showcase">
               
@@ -1468,6 +1468,8 @@
                 </div>
               
               </div>
+
+          @endforeach
 
             </div>
 
