@@ -31,4 +31,17 @@ class EntrepriseRepositorie {
 
 	}
 
+	public function entreprise_id($name){
+		$entreprise = Entreprise::whereUrl_name($name)->get();
+
+		foreach($entreprise as $entreprises){
+			$entreprise_id = $entreprises->url_name;
+			return $entreprise_id;
+		}
+
+	}
+
+
+
+
 }
