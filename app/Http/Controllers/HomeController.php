@@ -13,8 +13,8 @@ class HomeController extends Controller
     public function entreprise(string $url){
         Entreprise::all();
         $entreprise = new EntrepriseRepositorie();
-        $url_name = $entreprise->entreprise_url($url);
-        $entreprise_id = $entreprise->entreprise_id($url);
+        $url_name = $entreprise->entreprise_url("lushidev");
+        $entreprise_id = $entreprise->entreprise_id("lushidev");
 
         if($url_name){
             $entreprises = Entreprise::where('url_name',$url)->get();
