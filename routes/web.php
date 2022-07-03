@@ -17,13 +17,11 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('index');
 
-Auth::routes();
 
-/*Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');*/
-Route::get('/{entreprise}', [App\Http\Controllers\HomeController::class, 'entreprise']);
-//Route::get('/categories', [App\Http\Controllers\CategorieController::class, 'index'])->name('all');
 
-Route::middleware(['auth'])->group(function(){
+Route::get('entreprise/{entreprise}', [App\Http\Controllers\HomeController::class, 'entreprise']);
+
+/*Route::middleware(['auth'])->group(function(){*/
         Route::get('/categories', [App\Http\Controllers\CategorieController::class, 'create'])->name('create-categorie');
         Route::post('/categories', [App\Http\Controllers\CategorieController::class, 'store'])->name('store-categorie');
         Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
@@ -32,4 +30,6 @@ Route::middleware(['auth'])->group(function(){
         Route::get('/Entreprise', [App\Http\Controllers\EntrepriseController::class, 'create'])->name('create-entreprise');
         Route::post('/Entreprise', [App\Http\Controllers\EntrepriseController::class, 'store'])->name('store-entreprise');
     
-    });
+  /*  });*/
+
+Auth::routes();
