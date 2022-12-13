@@ -18,7 +18,7 @@ class CategorieController extends Controller
     public function index()
     {
         $categories = Category::all();
-        return view('Admin.categories');
+        return view('Admin.categories',compact('categories'));
     }
 
     /**
@@ -36,8 +36,10 @@ class CategorieController extends Controller
      */
     public function store(Request $request)
     {
-dd($request);
-        return redirect(route('/'));
+        $valide = $request->validate(['name'=>'required']);
+        Category::create($valide);
+
+        return redirect()->back();
     }
 
     /**

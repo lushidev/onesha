@@ -36,5 +36,6 @@ use Illuminate\Support\Facades\Route;
   Route::get('/managers',[ManagerController::class,'index'])->name('admin-managers');
 
   Route::post('/categories',[CategorieController::class,'store'])->name('admin-categories');
+  Route::post('/location',[LocationController::class,'store'])->name('admin-location');
 
 Auth::routes();

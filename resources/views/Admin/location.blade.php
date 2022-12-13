@@ -1,15 +1,14 @@
 @extends('layouts.Admin')
 @section('content')
-    
 <div class="page-wrapper">
     <div class="content">
         <div class="page-header">
             <div class="page-title">
-                <h4>Liste des categories</h4>
+                <h4>Liste des lieux</h4>
                 <h6></h6>
             </div>
             <div class="page-btn">
-                <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-added"><img src="assets/img/icons/plus.svg" alt="img" class="me-1">Ajouter une catégorie</a>
+                <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-added"><img src="assets/img/icons/plus.svg" alt="img" class="me-1">Ajouter un lieu</a>
             </div>
         </div>
         
@@ -113,6 +112,13 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($locations as $key => $item )
+                            <tr>
+                                <td>{{$key+1}}</td>
+                                <td>{{$item->name}}</td>
+                                <td>sh</td>
+                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -122,29 +128,33 @@
     </div>
 
     {{-- modal create --}}
-    <div wire:ignore.self class="modal fade" id="create" tabindex="-1" aria-labelledby="create"  aria-hidden="true">
+    <div  class="modal fade" id="create" tabindex="-1" aria-labelledby="create"  aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                     <h5 class="modal-title" >Ajouter un produit</h5>
+                     <h5 class="modal-title" >Ajouter une categorie</h5>
                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-lg-6 col-sm-12 col-12">
-                            <div class="form-group">
-                                <label>nom</label>
-                                <input type="text" wire:model="name">
+                        <form method="POST" action="{{route('admin-location')}}">
+                            @csrf
+                            <div class="col-lg-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <label>nom</label>
+                                    <input type="text" name="name">
+                                </div>
                             </div>
+                            
                         </div>
-                        
-                    </div>
-                    <div class="col-lg-12">
-                        <a class="btn btn-submit me-2" >Submit</a>
-                        <a class="btn btn-cancel" data-bs-dismiss="modal">Cancel</a>
-                    </div>
+                        <div class="col-lg-12">
+                            <button class="btn btn-submit me-2" type="submit">Submit</button>
+                            <a class="btn btn-cancel" data-bs-dismiss="modal">Cancel</a>
+                        </div>
+                        </form>
+
                 </div>
             </div>
         </div>
