@@ -56,7 +56,7 @@
       <!-- Notifications -->
       <li class="nav-item dropdown">
         <a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-          <img src="{{asset('assets/img/icons/notification-bing.svg')}}"   alt="img"> <span class="badge rounded-pill">{{Reduction::whereStatus(false)->count()}}</span>
+          <img src="{{asset('assets/img/icons/notification-bing.svg')}}"   alt="img"> <span class="badge rounded-pill"></span>
         </a>
         <div class="dropdown-menu notifications">
           <div class="topnav-dropdown-header">
@@ -65,23 +65,23 @@
           </div>
           <div class="noti-content">
             <ul class="notification-list">
-              @foreach (Reduction::whereStatus(false)->get() as $item )
+             
               <li class="notification-message">
                 <a href="activities.html">
                   <div class="media d-flex">
                     <div class="media-body flex-grow-1">
-                      <p class="noti-details"><span class="noti-title">{{$item->precommande->code}}</span></p>
+                      <p class="noti-details"><span class="noti-title"></span></p>
                       <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
                     </div>
                   </div>
                 </a>
               </li>
-              @endforeach
+            
 
             </ul>
           </div>
           <div class="topnav-dropdown-footer">
-            <a href="{{route('reductions')}}" class="text-success">voir toutes les notifications</a>
+            <a href="" class="text-success">voir toutes les notifications</a>
           </div>
         </div>
       </li>
@@ -98,7 +98,7 @@
                 <span class="user-img"><img src="assets/img/profiles/avator1.jpg" alt="">
                     <span class="status online"></span></span>
                 <div class="profilesets">
-                    <h6>{{ Auth::user()->name }}</h6>
+                    <h6></h6>
                     <h5>Admin</h5>
                 </div>
             </div>

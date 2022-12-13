@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\CategorieController;
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Client\HomeController as ClientHomeController;
 use App\Http\Controllers\Admin\LocationController;
+use App\Http\Controllers\Client\CategorieController as ClientCategorieController;
 use App\Http\Controllers\HomeController;
 use App\Models\Entreprise;
 use Illuminate\Support\Facades\Auth;
@@ -24,11 +25,12 @@ use Illuminate\Support\Facades\Route;
 
 
     Route::get('/',[ClientHomeController::class,'index'])->name('home');
+    Route::get('/categorie',[ClientCategorieController::class,'index'])->name('client-categorie');
 
 
-Route::prefix('admin')->group(function(){
+
   Route::get('/dashboard',[AdminHomeController::class,'index'])->name('admin-dash');
   Route::get('/categories',[CategorieController::class,'index'])->name('admin-categories');
   Route::get('/location',[LocationController::class,'index'])->name('admin-location');
-});
+
 Auth::routes();
