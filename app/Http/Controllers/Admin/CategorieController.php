@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Requests\CategorieRequest;
 use App\Http\Repositories\EntrepriseRepositorie;
+use App\Http\Controllers\Controller;
 
 class CategorieController extends Controller
 {

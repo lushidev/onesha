@@ -1,11 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Manager;
 
+use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
-use App\Models\Entreprise;
+use App\Models\Category;
+use Illuminate\Http\UploadedFile;
+use App\Models\Image;
+use App\Http\Repositories\ProductRepositorie;
 
-class EntrepriseController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +19,8 @@ class EntrepriseController extends Controller
      */
     public function index()
     {
-        //
+        // 
+        
     }
 
     /**
@@ -24,8 +30,8 @@ class EntrepriseController extends Controller
      */
     public function create()
     {
-       
-        return view('admin.entreprise');
+        $categories = Category::all();
+        return view('admin.product',['categories'=>$categories]);
     }
 
     /**
@@ -36,20 +42,25 @@ class EntrepriseController extends Controller
      */
     public function store(Request $request)
     {
-        Entreprise::create([
-            'user_id'=>$request->user_id,
+        
+      $newFile = time().'_'.$request->file('image')->getClientOriginalName();
+      $path = $request->file('image')->storeAs('uploads',$newFile,'public');        
+        Product::create([
+            'category_id'=>$request->categorie_id,
             'name'=>$request->name,
-            'url_name'=>$request->url_name
+            'description'=>$request->description,
+            'price'=>$request->price,
+            'path'=>$newFile
             ]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Product $product)
     {
         //
     }
@@ -57,10 +68,10 @@ class EntrepriseController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Product $product)
     {
         //
     }
@@ -69,10 +80,10 @@ class EntrepriseController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Product $product)
     {
         //
     }
@@ -80,10 +91,10 @@ class EntrepriseController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Product $product)
     {
         //
     }
