@@ -8,12 +8,11 @@ class EntrepriseRepositorie {
 
 	public function entreprise_name(){
 		$user_id = Auth::user()->id;
-		$entreprise = Entreprise::whereUser_id($user_id)->get();
-
-		foreach($entreprise as $entreprises){
-			$entreprise_name = $entreprises->name;
-			return $entreprise_name;
+		$entreprise = Entreprise::whereUser_id($user_id)->first();
+		if(!empty($entreprise)) {
+			return $entreprise->name;
 		}
+		
 	}
 
 	public function all_entreprise(){
@@ -22,22 +21,16 @@ class EntrepriseRepositorie {
 	}
 
 	public function entreprise_url($name){
-		$entreprise = Entreprise::whereUrl_name($name)->get();
+		$entreprise = Entreprise::whereName("lushidev")->first();
 
-		foreach($entreprise as $entreprises){
-			$entreprise_name = $entreprises->url_name;
-			return $entreprise_name;
-		}
+		return $entreprise->name;
 
 	}
 
 	public function entreprise_id($name){
-		$entreprise = Entreprise::whereUrl_name($name)->get();
+		$entreprise = Entreprise::whereName($name)->first();
 
-		foreach($entreprise as $entreprises){
-			$entreprise_id = $entreprises->id;
-			return $entreprise_id;
-		}
+		return $entreprise->id;
 
 	}
 

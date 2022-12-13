@@ -44,7 +44,7 @@ class ProductController extends Controller
       $newFile = time().'_'.$request->file('image')->getClientOriginalName();
       $path = $request->file('image')->storeAs('uploads',$newFile,'public');        
         Product::create([
-            'categorie_id'=>$request->categorie_id,
+            'category_id'=>$request->categorie_id,
             'name'=>$request->name,
             'description'=>$request->description,
             'price'=>$request->price,
