@@ -22,9 +22,9 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::group(function(){
+
     Route::get('/',[ClientHomeController::class,'index'])->name('home');
-});
+
 
 Route::prefix('admin')->group(function(){
   Route::get('/dashboard',[AdminHomeController::class,'index'])->name('admin-dash');
