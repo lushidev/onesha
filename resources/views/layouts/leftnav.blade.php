@@ -19,7 +19,13 @@
         <li class="submenu">
           <a ><img src="{{asset('assets/img/icons/product.svg')}}" alt="img"><span> managers</span> <span class="menu-arrow"></span></a>
           <ul>
-            <li><a href="">liste des managers </a></li>
+            <li><a href="{{route('admin-managers')}}">liste des managers </a></li>
+          </ul>
+        </li>
+        <li class="submenu">
+          <a ><img src="{{asset('assets/img/icons/product.svg')}}" alt="img"><span> locations</span> <span class="menu-arrow"></span></a>
+          <ul>
+            <li><a href="{{route('admin-location')}}">liste des locations </a></li>
           </ul>
         </li>
         
@@ -29,6 +35,7 @@
             <li><a href="">liste des produits </a></li>
           </ul>
         </li>
+        
         
 
         

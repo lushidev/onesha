@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\CategorieController;
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Client\HomeController as ClientHomeController;
 use App\Http\Controllers\Admin\LocationController;
+use App\Http\Controllers\Admin\ManagerController;
 use App\Http\Controllers\Client\CategorieController as ClientCategorieController;
 use App\Http\Controllers\HomeController;
 use App\Models\Entreprise;
@@ -32,5 +33,8 @@ use Illuminate\Support\Facades\Route;
   Route::get('/dashboard',[AdminHomeController::class,'index'])->name('admin-dash');
   Route::get('/categories',[CategorieController::class,'index'])->name('admin-categories');
   Route::get('/location',[LocationController::class,'index'])->name('admin-location');
+  Route::get('/managers',[ManagerController::class,'index'])->name('admin-managers');
+
+  Route::post('/categories',[CategorieController::class,'store'])->name('admin-categories');
 
 Auth::routes();

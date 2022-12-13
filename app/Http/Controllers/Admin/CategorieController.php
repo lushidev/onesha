@@ -26,12 +26,7 @@ class CategorieController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        $entreprise = new EntrepriseRepositorie();
-        $all_entreprises = $entreprise->all_entreprise();
-        return view('admin.categorie',['entreprises'=>$all_entreprises]);
-    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -41,11 +36,7 @@ class CategorieController extends Controller
      */
     public function store(Request $request)
     {
-        $categorie = Category::create([
-            'user_id'=>$request->user_id,
-            'name'=>$request->name,
-            'entreprise_id'=>$request->entreprise_id
-            ]);
+dd($request);
         return redirect(route('/'));
     }
 
