@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\LocationController;
 use App\Http\Controllers\Admin\ManagerController;
 use App\Http\Controllers\Client\CategorieController as ClientCategorieController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Manager\ProductController;
 use App\Models\Entreprise;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -34,7 +35,7 @@ use Illuminate\Support\Facades\Route;
   Route::get('/categories',[CategorieController::class,'index'])->name('admin-categories');
   Route::get('/location',[LocationController::class,'index'])->name('admin-location');
   Route::get('/managers',[ManagerController::class,'index'])->name('admin-managers');
-
+Route::get("/products",[ProductController::class,'index']);
   Route::post('/categories',[CategorieController::class,'store'])->name('admin-categories');
   Route::post('/location',[LocationController::class,'store'])->name('admin-location');
 
